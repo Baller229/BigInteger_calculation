@@ -7,14 +7,19 @@ public class BigIntCalc {
     //
     //==============================================================================================
 
-    public static BigInteger multiplication(String number1, String number2)
+    public static String multiplication0(BigInteger number1, BigInteger number2)
+    {
+        return number1.multiply(number2).toString();
+    }
+
+    public static String multiplication(String number1, String number2)
     {
 
         BigInteger largeNum = new BigInteger(number1);
         BigInteger anotherLargeNum = new BigInteger(number2);
         largeNum = largeNum.multiply(anotherLargeNum);
 
-        return largeNum;
+        return largeNum.toString();
     }
 
     //======================================Manual Multiplication Alogorithm========================
@@ -22,7 +27,7 @@ public class BigIntCalc {
     //==============================================================================================
 
     public static String basicMultiplication(int number1[], int number2[]) {
-       
+
         int result[] = new int[number1.length + number2.length - 1];
         for (int i = number2.length - 1; i >= 0; i--) {
             for (int j = number1.length - 1; j >= 0; j--) {
