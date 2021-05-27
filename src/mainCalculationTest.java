@@ -9,7 +9,7 @@ class mainCalculationTest {
     static int[] testArr1 = new int[testNum1.length()];
     static int[] testArr2 = new int[testNum2.length()];
 
-    
+
     @Test
      void BigIntTest()
     {
