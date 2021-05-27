@@ -4,10 +4,12 @@ import java.math.BigInteger;
 public class BigIntCalc {
 
     //======================================BitInteger Algorithm====================================
+    //
     //==============================================================================================
 
     public static BigInteger multiplication(String number1, String number2)
     {
+
         BigInteger largeNum = new BigInteger(number1);
         BigInteger anotherLargeNum = new BigInteger(number2);
         largeNum = largeNum.multiply(anotherLargeNum);
@@ -16,6 +18,7 @@ public class BigIntCalc {
     }
 
     //======================================Manual Multiplication Alogorithm========================
+    //
     //==============================================================================================
 
     public static String basicMultiplication(int number1[], int number2[]) {
@@ -41,6 +44,7 @@ public class BigIntCalc {
     }
 
     //======================================Method for comparing these 2 algorithms=================
+    //
     //==============================================================================================
 
     public static boolean compare(Object al1, Object al2)
@@ -52,5 +56,5 @@ public class BigIntCalc {
         else return false;
     }
 
-    
+
 }
